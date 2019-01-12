@@ -1,7 +1,14 @@
-/** @format */
+import React, { Component } from 'react';
+import { AppRegistry } from 'react-native';
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+import Rotas from './src/Rotas';
 
-AppRegistry.registerComponent(appName, () => App);
+export default class DesafioIfood extends Component {
+    render() {
+        return (
+            <Rotas />
+        );
+    }
+}
+
+AppRegistry.registerComponent('DesafioIfood', () => DesafioIfood);
