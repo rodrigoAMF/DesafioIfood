@@ -7,8 +7,8 @@ import CenaRecomendacao from './components/CenaRecomendacao';
 const Rotas = () => (
     <Router>
         <Scene key='app'>
-            <Scene key='principal' component={CenaInicial} initil hideNavBar />
-            <Scene key='sobrejogo' component={CenaRecomendacao} title="{cidade}" />
+            <Scene key='inicio' component={CenaInicial} initil hideNavBar />
+            <Scene key='recomendacao' component={CenaRecomendacao} title="{cidade}" />
         </Scene>
     </Router>
 );
