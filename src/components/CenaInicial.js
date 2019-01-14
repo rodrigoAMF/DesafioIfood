@@ -15,12 +15,12 @@ const listaCidades = require('../json/cidades-ids.json');
 
 const imgDestaque = require('../imgs/img-destaque.png');
 
-export default class SobreJogo extends Component {
+export default class CenaInicial extends Component {
     constructor(props) {
 		super(props);
 
         // Cria um state para guardar o nome da cidade digitado pelo usuário
-        this.state = { cidade: '' };
+        this.state = { id: '' };
 	}
 
     /*
@@ -57,7 +57,7 @@ export default class SobreJogo extends Component {
         }
 
         // Chama a próxima cena (CenaRecomendacao)
-        Actions.recomendacao({ cidade: id });
+        Actions.recomendacao({ id });
     };
 
     render() {

@@ -8,7 +8,7 @@ const Rotas = () => (
     <Router>
         <Scene key='app'>
             <Scene key='inicio' component={CenaInicial} initil hideNavBar />
-            <Scene key='recomendacao' component={CenaRecomendacao} title="{cidade}" />
+            <Scene key='recomendacao' component={CenaRecomendacao} title="Nossa recomendação" />
         </Scene>
     </Router>
 );
