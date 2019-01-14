@@ -4,13 +4,16 @@ import {
     StyleSheet,
     TouchableHighlight,
     Text,
+    Image,
     Alert,
     TextInput
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 // Nomes de Cidades de seus respectivos IDs na API OpenWeather
-const listaCidades = require('../json/cidades_ids.json');
+const listaCidades = require('../json/cidades-ids.json');
+
+const imgDestaque = require('../imgs/img-destaque.png');
 
 export default class SobreJogo extends Component {
     constructor(props) {
@@ -60,6 +63,7 @@ export default class SobreJogo extends Component {
     render() {
 		return (
             <View style={styles.cena}>
+                <Image source={imgDestaque} style={styles.imgDestaque} />
                 <TextInput
                     style={styles.textInput}
                     onChangeText={(value) => this.setState({ cidade: value })}
@@ -81,17 +85,25 @@ export default class SobreJogo extends Component {
 
 const styles = StyleSheet.create({
     cena: {
-        backgroundColor: '#FFF',
+        backgroundColor: '#fff',
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
     },
+    imgDestaque: {
+        width: 380,
+        height: 80,
+        marginBottom: 100
+    },
     textInput: {
-        fontSize: 32,
+        backgroundColor: '#f5f5f5',
+        width: 380,
+        borderRadius: 10,
+        fontSize: 26,
         textAlign: 'center'
     },
     button: {
-        backgroundColor: '#178AFF',
+        backgroundColor: '#fd354a',
         marginTop: 20,
         height: 50,
         width: 200,
