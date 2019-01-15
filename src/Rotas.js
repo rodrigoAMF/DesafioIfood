@@ -5,7 +5,7 @@ import CenaInicial from './components/CenaInicial';
 import CenaRecomendacao from './components/CenaRecomendacao';
 
 const Rotas = () => (
-    <Router>
+    <Router navigationBarStyle={{ tintColor: '#fff', backgroundColor: '#fd354a' }} titleStyle={{ color: '#fff' }} tintColor='#fff'>
         <Scene key='app'>
             <Scene key='inicio' component={CenaInicial} initil hideNavBar />
             <Scene key='recomendacao' component={CenaRecomendacao} title="Nossa recomendação" />
