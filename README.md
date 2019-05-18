@@ -27,10 +27,6 @@ O aplicativo funciona da seguinte forma:
 * [Axios](https://github.com/axios/axios) - Requisições HTTP
 * Android Studio ou XCode
 
-# Contribuições
-
-Contribuições de todos os tipos são bem vindas, porém apenas após o resultado do desafio ser divulgado elas serão avaliadas e/ou aceitas.
-
 # Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
